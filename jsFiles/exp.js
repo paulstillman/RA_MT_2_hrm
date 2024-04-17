@@ -110,11 +110,11 @@ var preload = {
 
 timeline.push(preload)
 
-const good_right = Math.floor(Math.random() * 2);
-if (good_right === 1) {
-  choices_goodbad = ['BAD', 'GOOD'];
+const harmful_right = Math.floor(Math.random() * 2);
+if (harmful_right === 1) {
+  choices_hrmhrmless = ['HARMLESS', 'HARMFUL'];
 } else {
-  choices_goodbad = ['GOOD', 'BAD'];
+  choices_hrmhrmless = ['HARMFUL', 'HARMLESS'];
 }
 
 
@@ -178,14 +178,14 @@ const start_screen_practice = {
 const mt_trial_practice_flowers = {
   type: jsPsychHtmlButtonResponsePES,
   stimulus: '<img src="./img/good/flowers6.jpg">',
-  choices: choices_goodbad,
+  choices: choices_hrmhrmless,
   adjust_aspect_ratio: 0,
   button_html: ['<button class="jspsych-btn mt-response-btn" id="left_response" style = "position:absolute; left: 0px; top: 0px">%choice%</button>', '<button class="jspsych-btn mt-response-btn" id="right_response" style = "position:absolute; right:0px; top: 0px">%choice%</button>'],
   slowmouse_message: `Please begin moving your mouse<br>as soon as the image appears`,
   mouseout_message: `Please keep your mouse<br>in the browser window`,
   data: {
     task: 'MT_practice',
-    good_right: good_right,
+    harmful_right: harmful_right,
     stim_type:  'practice'
   },
   extensions: [
@@ -195,14 +195,14 @@ const mt_trial_practice_flowers = {
 const mt_trial_practice_jail = {
   type: jsPsychHtmlButtonResponsePES,
   stimulus: '<img src="./img/bad/Jail2.jpg">',
-  choices: choices_goodbad,
+  choices: choices_hrmhrmless,
   adjust_aspect_ratio: 0,
   button_html: ['<button class="jspsych-btn mt-response-btn" id="left_response" style = "position:absolute; left: 0px; top: 0px">%choice%</button>', '<button class="jspsych-btn mt-response-btn" id="right_response" style = "position:absolute; right:0px; top: 0px">%choice%</button>'],
   slowmouse_message: `Please begin moving your mouse<br>as soon as the image appears`,
   mouseout_message: `Please keep your mouse<br>in the browser window`,
   data: {
     task: 'MT_practice',
-    good_right: good_right,
+    harmful_right: harmful_right,
     stim_type:  'practice'
   },
   extensions: [
@@ -271,14 +271,14 @@ const mt_trial_competent = {
   type: jsPsychHtmlButtonResponsePES,
   // stimulus: '<img src="./img/' + jsPsych.timelineVariable('stimulus') + '.png">',
   stimulus: jsPsych.timelineVariable('stimulus'),
-  choices: choices_goodbad,
+  choices: choices_hrmhrmless,
   adjust_aspect_ratio: 0,
   button_html: ['<button class="jspsych-btn mt-response-btn" id="left_response" style = "position:absolute; left: 0px; top: 0px">%choice%</button>', '<button class="jspsych-btn mt-response-btn" id="right_response" style = "position:absolute; right:0px; top: 0px">%choice%</button>'],
   slowmouse_message: `Please begin moving your mouse<br>as soon as the image appears`,
   mouseout_message: `Please keep your mouse<br>in the browser window`,
   data: {
     task: 'MT',
-    good_right: good_right,
+    harmful_right: harmful_right,
     stim_type:  jsPsych.timelineVariable('stim_type')
   },
   extensions: [
