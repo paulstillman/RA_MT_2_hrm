@@ -61,7 +61,7 @@ jsPsych.data.addProperties({ sface: sface });
 jsPsych.data.addProperties({ got_url_vars: got_url_vars });
 
 
-var link_redirect = `https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_1CdBpT9qthmaMe2?` +
+var link_redirect = `https://yalesurvey.ca1.qualtrics.com/jfe/form/SV_7VXAdbqKSWvyDI2?` +
                     `idnum=${idnum}&` +
                     `kface=${kface}&` +
                     `fface=${fface}&` +
