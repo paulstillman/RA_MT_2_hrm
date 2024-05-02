@@ -30,9 +30,6 @@ function shuffleArray(array) {
   }
 }
 
-// todo: add timestamp
-// TODO: shrink buttons
-
 let idnum = jsPsych.data.getURLVariable('idnum');
 let cond = jsPsych.data.getURLVariable('cond');
 let kface = jsPsych.data.getURLVariable('kface');
@@ -412,7 +409,7 @@ timeline.push(leave_fullscreen)
 const save_data = {
   type: jsPsychPipe,
   action: "save",
-  experiment_id: "RgnU3Np14jP3",
+  experiment_id: "CRNweUjwTY8x",
   filename: fname,
   data_string: () => jsPsych.data.get().csv()
 };
