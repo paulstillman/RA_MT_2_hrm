@@ -84,11 +84,11 @@ var preload = {
   type: jsPsychPreload,
   images: ['./img/bad/war6.jpg',
     './img/bad/caraccident2.jpg',
-    './img/bad/feces2.jpg',
+    './img/bad/dogattack1_cropped.jpg',
     './img/bad/fire9.jpg',
-    './img/bad/planecrash2.jpg',
-    './img/bad/shot3.jpg',
-    './img/bad/Jail2.jpg',
+    './img/bad/tornado1.jpg',
+    './img/bad/explosion2.jpg',
+    './img/bad/gun5.jpg',
     './img/good/Dog6.jpg',
     './img/good/Cat5.jpg',
     './img/good/flowers2.jpg',
@@ -189,9 +189,9 @@ const mt_trial_practice_flowers = {
     { type: jsPsychExtensionMouseTracking }
   ]
 };
-const mt_trial_practice_jail = {
+const mt_trial_practice_gun = {
   type: jsPsychHtmlButtonResponsePES,
-  stimulus: '<img src="./img/bad/Jail2.jpg">',
+  stimulus: '<img src="./img/bad/gun5.jpg">',
   choices: choices_hrmhrmless,
   adjust_aspect_ratio: 0,
   button_html: ['<button class="jspsych-btn mt-response-btn" id="left_response" style = "position:absolute; left: 0px; top: 0px">%choice%</button>', '<button class="jspsych-btn mt-response-btn" id="right_response" style = "position:absolute; right:0px; top: 0px">%choice%</button>'],
@@ -210,11 +210,11 @@ const mt_trial_practice_jail = {
 timeline.push(start_screen_practice)
 timeline.push(mt_trial_practice_flowers)
 timeline.push(start_screen_practice)
-timeline.push(mt_trial_practice_jail)
+timeline.push(mt_trial_practice_gun)
 timeline.push(start_screen_practice)
 timeline.push(mt_trial_practice_flowers)
 timeline.push(start_screen_practice)
-timeline.push(mt_trial_practice_jail)
+timeline.push(mt_trial_practice_gun)
 
 
 var instr_page3 = `<div class='instructions'>
@@ -257,10 +257,10 @@ const target_list = [
   { stimulus: '<img src="./img/good/Dog6.jpg">', stim_type: 'positive' },
   { stimulus: '<img src="./img/bad/war6.jpg">', stim_type: 'negative' },
   { stimulus: '<img src="./img/bad/caraccident2.jpg">', stim_type: 'negative' },
-  { stimulus: '<img src="./img/bad/feces2.jpg">', stim_type: 'negative' },
+  { stimulus: '<img src="./img/bad/explosion2.jpg">', stim_type: 'negative' },
   { stimulus: '<img src="./img/bad/fire9.jpg">', stim_type: 'negative' },
-  { stimulus: '<img src="./img/bad/planecrash2.jpg">', stim_type: 'negative' },
-  { stimulus: '<img src="./img/bad/shot3.jpg">', stim_type: 'negative' }
+  { stimulus: '<img src="./img/bad/dogattack1_cropped.jpg">', stim_type: 'negative' },
+  { stimulus: '<img src="./img/bad/tornado1.jpg.jpg">', stim_type: 'negative' }
 ];
 
 
