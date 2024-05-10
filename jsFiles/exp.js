@@ -260,7 +260,7 @@ const target_list = [
   { stimulus: '<img src="./img/bad/explosion2.jpg">', stim_type: 'negative' },
   { stimulus: '<img src="./img/bad/fire9.jpg">', stim_type: 'negative' },
   { stimulus: '<img src="./img/bad/dogattack1_cropped.jpg">', stim_type: 'negative' },
-  { stimulus: '<img src="./img/bad/tornado1.jpg.jpg">', stim_type: 'negative' }
+  { stimulus: '<img src="./img/bad/tornado1.jpg">', stim_type: 'negative' }
 ];
 
 
